@@ -1,13 +1,13 @@
 package fr.iutvalence.info.dut.m3105.pattern.state;
 
 
-public abstract class TrafficSignalState
+public abstract class TrafficSignalState 
 {
 	protected final TrafficSignalContext context;
 	protected int durationInSeconds;
-	private final TrafficSignalStateName name;
+	private final TSColor name;
 	
-	public TrafficSignalState(TrafficSignalContext context, int durationInSeconds, TrafficSignalStateName name)
+	public TrafficSignalState(TrafficSignalContext context, int durationInSeconds, TSColor name)
 	{
 		super();
 		this.context = context;
@@ -26,7 +26,7 @@ public abstract class TrafficSignalState
 		System.out.println(this.durationInSeconds);
 	}
 
-	public TrafficSignalStateName getName()
+	public TSColor getName()
 	{
 		return this.name;
 	}

@@ -6,7 +6,7 @@ public class TrafficSignalOrangeState extends TrafficSignalState
 	
 	public TrafficSignalOrangeState(TrafficSignalContext context)
 	{
-		super(context, ORANGE_STATE_DURATION_IN_SECONDS, TrafficSignalStateName.ORANGE);
+		super(context, ORANGE_STATE_DURATION_IN_SECONDS, TSColor.ORANGE);
 	}
 
 	@Override
